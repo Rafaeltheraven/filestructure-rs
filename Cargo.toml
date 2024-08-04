@@ -5,7 +5,6 @@ edition = "2021"
 authors = ["Rafael Dulfer"]
 repository = "https://github.com/Rafaeltheraven/filestructure-rs"
 license = "MIT"
-edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
