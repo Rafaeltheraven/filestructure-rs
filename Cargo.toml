@@ -5,6 +5,7 @@ edition = "2021"
 authors = ["Rafael Dulfer"]
 repository = "https://github.com/Rafaeltheraven/filestructure-rs"
 license = "MIT"
+description = "Rust library to sloppily create a filestructure in memory and write it to disk."
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
