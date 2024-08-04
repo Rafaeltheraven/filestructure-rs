@@ -19,7 +19,7 @@ pub struct FileStructure {
 /// Because [`TokenStream`]s are kinda funky and they just get converted to strings
 /// for writing to disk anyway, they are not supported. Just convert them to string instead.
 #[derive(Debug, Eq, PartialEq)]
-pub enum FileType {
+enum FileType {
     /// Write a specific string to a file.
     String(String),
     /// Write binary data to a file.
@@ -37,13 +37,13 @@ impl Default for FileStructure {
 impl FileStructure {
     /// Basic constructor.
     #[must_use] 
-    pub const fn new(path: String, kind: FileType) -> Self {
+    const fn new(path: String, kind: FileType) -> Self {
         Self { path, kind }
     }
 
     /// Constructs a dir.
     #[must_use]
-    pub const fn new_dir(name: String) -> Self {
+    const fn new_dir(name: String) -> Self {
         Self { path: name, kind: FileType::Dir(Vec::new()) }
     }
 
